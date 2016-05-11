@@ -1,0 +1,15 @@
+<div class="content">
+  <div>
+  	{{formatMessage (intlGet "messages.welcome")}} {{name}}
+  </div>
+  <footer>
+  <p>{{formatDate date day="numeric" month="long" year="numeric"}}</p>
+  </footer>
+  <div>
+    {{formatMessage (intlGet "messages.coffee_drinking")
+            name=name
+            numCups=numCups}},
+    {{formatMessage (intlGet "messages.next_coffee")
+            numCups=nextCup}}
+  </div>
+</div>
